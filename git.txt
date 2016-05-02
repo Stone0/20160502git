@@ -1,0 +1,48 @@
+github的SSH配置：
+一、
+设置git的user name和email：
+$ git config --global user.name "stone0"
+$ git config --global user.email "757530358@qq.com"
+
+二、
+生成密钥ssh：
+$ ssh-keygen -t rsa -C "haiyan.xu.vip@gmail.com"
+按3个回车，密码为空。
+
+得到C盘里.ssh文件：id_rsa和id_rsa.pub
+
+id_rsa.pub就是公钥。
+
+三、
+打开github.com，登录账号，添加ssh。
+
+四、
+测试：
+ssh git@github.com
+
+
+使用github
+新建项目。
+打开一个项目，点击Code
+
+获取源码：
+复制clone的地址（SSH）。在新建空文件夹下右击选bash。$ git clone 地址
+
+$ git clone git@github.com:Stone0/20160502git.git
+空文件夹下就有项目源了---20160502git（项目文件夹）
+cd 进入文件夹 创建项目文件
+
+$ git status（查看版本信息）
+列出当前目录所有还没有被git管理的文件和被git管理且被修改但还未提交(git commit)的文件
+
+$ git add 文件名
+生成快照并存入项目索引(添加本地文件)
+
+$ git commit -m "add helloworld.java"
+项目索引提交，修改完后提交，-m指定提交信息
+
+$ git log
+查看所有历史记录
+
+$ git push
+将本地分支的更新,推送到远程主机（上传到github账号）
