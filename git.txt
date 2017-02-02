@@ -2,11 +2,11 @@ github的SSH配置：
 一、
 设置git的user name和email：
 $ git config --global user.name "stone0"
-$ git config --global user.email "757530358@qq.com"
+$ git config --global user.email "18702004182@163.com"
 
 二、
 生成密钥ssh：
-$ ssh-keygen -t rsa -C "haiyan.xu.vip@gmail.com"
+$ ssh-keygen -t rsa -C "18702004182@163.com"
 按3个回车，密码为空。
 
 得到C盘里.ssh文件：id_rsa和id_rsa.pub
